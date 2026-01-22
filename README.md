@@ -2,6 +2,7 @@
 
 A branching LLM interface for exploring ideas through conversation trees. Branch from any point, merge insights from multiple explorations, and visualize your thought process.
 
+<img width="1785" height="995" alt="image" src="https://github.com/user-attachments/assets/32480381-dadf-447d-b1a7-761749be47cb" />
 
 
 ## Features
