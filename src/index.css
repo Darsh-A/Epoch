@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Fira Code", monospace;
+  
+  /* Base colors */
+  --color-bg-base: #0a0a0b;
+  --color-bg-primary: #0f0f10;
+  --color-bg-secondary: #141416;
+  --color-bg-tertiary: #1a1a1e;
+  --color-bg-elevated: #222226;
+  
+  /* Border colors */
+  --color-border: #27272a;
+  --color-border-hover: #3f3f46;
+  
+  /* Text colors */
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+  
+  /* Accent - subtle warm gray instead of purple */
+  --color-accent: #e4e4e7;
+  --color-accent-hover: #ffffff;
+  --color-accent-muted: rgba(228, 228, 231, 0.1);
+  
+  /* Status colors */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  
+  /* Node colors for branches */
+  --color-node-user: #3b82f6;
+  --color-node-ai: #8b5cf6;
+  --color-node-merge: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-hover);
+}
+
+/* Remove default focus styles - we'll add our own where needed */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+/* Custom selection */
+::selection {
+  background: var(--color-accent-muted);
+  color: var(--color-text-primary);
+}
